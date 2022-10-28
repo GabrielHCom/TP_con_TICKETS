@@ -1,0 +1,461 @@
+nav { background-color:  rgb(75, 74, 74);} 
+
+        nav a {text-align: center;}
+
+        .tamLogo {width: 80px; height: auto;}
+
+        .navbar .navbar-nav a:last-child{color: rgb(11, 221, 11);}
+
+
+        /*.portada img {background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/ba1.jpg);*/
+        
+        .portada  {
+          /*  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/ba1.jpg);*/
+           
+          /*background-size: ;*/
+           /* opacity: black 5;*/
+            height: 700px;
+            color: white; font-weight: 400;    
+        }
+
+        .portada .container-flex { background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/ba1.jpg);
+            
+          width: 100%;
+            height: 150%;
+            margin: 0 ;    /*background-size: ;*/
+            display: flex;
+            justify-content: end;
+            padding-top: 25%; padding-right: 180px;
+        }
+
+        .portada .textPortada {
+            width: 70%;
+            text-align: right; padding-top: 180px; padding-right: 10px;
+        }
+
+        .portada .botones {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .portada .botones a {
+            color: rgb(248, 239, 239)
+        }
+        .portada .btn {
+            margin: 10px;
+            border-radius: 5px;
+            background-color: gray;
+        }
+
+        .portada .botonTickets {
+            background-color: green;
+        }
+
+        .A {width: 90%;
+    display: flex;
+    padding-left: 210px;
+}
+
+.A .card {
+    width: 30%;
+}
+    
+
+.P {padding: 5px;}
+
+
+.Tit_Oradores {
+    text-align: center;
+    margin-top: 370px;
+    }
+
+
+.card .Orador {
+    margin-top: 10px;
+    display: inline-flex;
+}
+
+.card .Orador h6 {
+    font-size: small ;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 10px;
+
+}
+
+.card h3 {
+    font-size: 30px;
+    padding-left: 10px; 
+}
+
+.card p {
+    font-size: 15px; padding: 15px;
+}    
+
+.card .Orador .B_Js {
+    background-color: yellow;
+    border-radius: 5px;
+    margin-left: 10px; margin-right: 10px;
+}
+
+.card .Orador .B_React {
+    background-color:rgb(24, 193, 245);
+    border-radius: 5px;
+}
+
+.card .Orador .B_Neg {
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px; margin-right: 10px;
+}
+
+.card .Orador .B_St {
+    background-color: rgb(182, 10, 47);
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+.Img_texto {
+    display: flex;
+    margin-top: 5px;
+}
+
+.Img_texto img {
+    width: 50%;
+
+}
+
+.h2p_texto {
+    background-color: rgb(75, 74, 74);
+    color: white;
+    padding: 20px;
+    text-align: justify;
+}
+
+.boton_conoceMas {margin: 20px; padding: 10px;
+            border-radius: 5px;
+            background-color: rgb(75, 74, 74);
+        color: white; border: 1px solid white;
+        text-decoration: none;
+        }
+            
+
+        .charla {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: small;
+
+
+}
+
+.cont_formulario {
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Nombre {
+width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.inputN {
+    width: 48%;
+    padding: 7px ;
+    border-radius: 3px;
+    border: 1px solid gray;
+   
+
+}
+
+.AreaText
+{   width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    columns: 50; 
+}
+
+
+.boton_enviar {
+    width: 100%;
+    padding: 5px 0;
+    font-size: larger;
+    background-color: rgba(154, 231, 81, 0.8);
+    border: none;
+    font-weight:bolder; color: white;
+    border-radius: 3px;
+   }
+
+   .f_container {
+background-color: #1f4c68;
+    width: 100%;
+    height: 110px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.f_container a {color: aliceblue;
+    text-decoration: none}
+
+
+    @media(max-width: 768px) {
+        .conoceMas { 
+          display: flex;
+          flex-direction: column;
+        }
+       
+        .conoceMas .Img_texto { 
+            display: flex;
+            flex-direction: column;}
+        
+         .conoceMas img { width: 100%;
+
+        }
+      
+      .conoceMas .h2p_texto >* {
+          display: block;
+          text-align:start;
+        }
+      
+        .h2p_texto .boton_conoceMas {
+          width: 50%;
+          margin: 0 auto;
+          flex-direction: column; text-align: center;
+        }
+      .cont_formulario .Nombre {
+          width: 100%;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-bottom: 15px;
+        }
+      
+        .cont_formulario .Nombre .inputN{
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      
+       .cont_formulario {
+          width: 80vw;
+        }
+      
+        .f_container {
+          flex-direction: column;
+          padding: 15px 0;
+          height: 100%;
+         }
+      
+         .f_container a {
+          padding: 10px 0;
+          width: 100%;
+          text-align: center;
+        }
+      
+        .portada .textPortada {
+            width: 70%;
+            text-align: end; margin-right: 0%;
+        }
+
+      }
+      
+
+
+
+
+      @media(max-width: 992px) { 
+
+        .portada .textPortada {
+          width: 100%;
+          margin-bottom: 20vh;
+          text-align: center;}
+        
+      
+        .portada .botones {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+      
+        .A {display: flex; 
+            flex-direction: column;
+            justify-content:left ;
+            width: 65%;
+            padding-left: 0%; margin-left: 0;
+            flex-wrap: wrap;
+
+  
+        }
+        .A .card {min-width: 300px;   justify-content:center; flex-direction: column; text-align: center;
+            margin-left: 25%; padding-left: 0%; margin-right: 0%; padding-right: 0%;
+
+
+        }
+
+        .conoceMas .Img_texto { 
+            display: flex;
+            flex-direction: column;
+          }
+         
+        .cont_formulario {
+          width: 100%px;
+        }
+    }
+
+
+      @media(max-width: 576px) {
+        .portada .botones {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      
+        .A {display: flex; 
+            flex-direction: column;
+            justify-content: flex-start ;
+            width: 65%;
+            padding-left: 0%; margin-left: 0;
+      }
+
+    }
+
+
+
+
+
+
+      .tickets .container_div {
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .categorias {
+        display: flex;
+        justify-content: space-evenly;
+        margin: -7px;
+        margin-top: 7px;
+      }
+      
+      .categorias .estudiante,
+      .trainee,
+      .junior {
+        width: 30%;
+        min-width: 180px;
+        text-align: center;
+        padding: 20px; 
+        margin: 10px 10px;        
+      }
+      
+      
+      .categorias h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+      
+      .categorias h5 {
+        font-size: 16px; 
+        color: grey; 
+      }
+      
+      .categorias h6 {
+        font-size: 14px; 
+        color: grey; 
+      }
+      
+      .categorias .estudiante {
+        border-radius: 1px;
+        border: 2px solid blue;
+      }
+      
+      
+      .categorias .trainee {
+        border-radius: 1px;
+        border: 2px solid green;
+      }
+      
+      .categorias .junior {
+        border-radius: 1px;
+        border: 2px solid orange;
+      }
+      
+      
+      .container_div .textoVenta {
+        text-align: center;
+      }
+      
+      .tickets-form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      
+      .tickets-form .t_nombre,
+      .t_apellido {
+        width: 49%;
+        margin: 0.5rem 0;
+        border-radius: 3px;
+        border: solid gray 1px;
+        padding: 6px;
+      }
+      
+      .tickets-form .t_Email {
+        width: 100%;
+        border-radius: 3px;
+        border: solid gray 1px;
+        padding: 6px;
+      }
+      
+      .tickets-form .label1,
+      .label12 {
+        width: 49%;
+        margin: 0.5rem 0;
+      }
+      
+      .tickets-form .t_canti,
+      .clas_categ {
+        width: 100%;
+        border-radius: 3px;
+        border: solid gray 1px;
+        padding: 6px;
+      }
+      
+      .tickets-form .clas_categ {
+        background-color: transparent;
+        color: var(--gray-600);
+      }
+      
+      
+      .tickets-form .Otp {
+        width: 100%;
+        background-color:  rgb(155, 200, 222);
+        border-radius: 3px;
+        border: none;
+        padding: 13px;
+        color: var(--gray-900);
+        margin: 20px 0px;
+      }
+      
+     
+      .tickets-form .botonT {
+        width: 49%;
+        background-color: rgba(114, 209, 26, 0.8);
+        color: white;
+        margin: 20px 0px; 
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+        border: none;
+      }
+
